@@ -1,0 +1,5 @@
+@startuml
+class org.olivier.toto
+class org.olivier.titi
+org.olivier.toto --> org.olivier.titi
+@enduml

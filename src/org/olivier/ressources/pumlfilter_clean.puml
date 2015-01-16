@@ -1,0 +1,8 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+interface java.util.Enumeration
+interface javax.swing.event.TreeSelectionListener
+interface javax.swing.tree.TreeCellRenderer
+interface org.olivier.component.jtreecheckbox.check.TreePathSelectable
+@enduml

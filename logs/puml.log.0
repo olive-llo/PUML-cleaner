@@ -1,0 +1,279 @@
+janv. 11, 2015 3:53:40 PM org.olivier.framePUMLCleaner readInputFile
+Grave: FileNotFoundException
+java.io.FileNotFoundException: /home/olivier/NetBeansProjects/qualiformed/Qualinax/trunk/qlx-platform/src/main/java/com/qualiformed/qualinax/component/qc/entity/qc_entity_new.puml (Aucun fichier ou dossier de ce type)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:97)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at org.olivier.framePUMLCleaner.readInputFile(framePUMLCleaner.java:107)
+	at org.olivier.framePUMLCleaner.jButtonLireFichierActionPerformed(framePUMLCleaner.java:419)
+	at org.olivier.framePUMLCleaner.access$100(framePUMLCleaner.java:32)
+	at org.olivier.framePUMLCleaner$3.actionPerformed(framePUMLCleaner.java:300)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6504)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6269)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4860)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4686)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4686)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+janv. 11, 2015 10:29:14 PM org.olivier.framePUMLCleaner readInputFile
+GRAVE: FileNotFoundException
+java.io.FileNotFoundException: /home/olivier/NetBeansProjects/qualiformed/Qualinax/trunk/qlx-platform/src/main/java/com/qualiformed/qualinax/component/qc/entity/qc_entity_unix.puml (Aucun fichier ou dossier de ce type)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at org.olivier.framePUMLCleaner.readInputFile(framePUMLCleaner.java:107)
+	at org.olivier.framePUMLCleaner.jButtonLireFichierActionPerformed(framePUMLCleaner.java:419)
+	at org.olivier.framePUMLCleaner.access$100(framePUMLCleaner.java:32)
+	at org.olivier.framePUMLCleaner$3.actionPerformed(framePUMLCleaner.java:300)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at org.GNOME.Accessibility.AtkWrapper$4.dispatchEvent(AtkWrapper.java:563)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+
+janv. 12, 2015 10:47:20 PM org.olivier.framePUMLCleaner readInputFile
+GRAVE: FileNotFoundException
+java.io.FileNotFoundException: /home/olivier/NetBeansProjects/qualiformed/Qualinax/trunk/qlx-platform/src/main/java/com/qualiformed/qualinax/component/qc/entity/qc_entity_unix.puml (Aucun fichier ou dossier de ce type)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at org.olivier.framePUMLCleaner.readInputFile(framePUMLCleaner.java:110)
+	at org.olivier.framePUMLCleaner.jButtonLireFichierActionPerformed(framePUMLCleaner.java:430)
+	at org.olivier.framePUMLCleaner.access$100(framePUMLCleaner.java:36)
+	at org.olivier.framePUMLCleaner$3.actionPerformed(framePUMLCleaner.java:311)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at org.GNOME.Accessibility.AtkWrapper$4.dispatchEvent(AtkWrapper.java:563)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+
+janv. 13, 2015 7:30:55 PM org.olivier.MyProperties loadProperties
+GRAVE: IOException
+java.io.FileNotFoundException: pumlcleaner.properties (Aucun fichier ou dossier de ce type)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at org.olivier.MyProperties.loadProperties(MyProperties.java:43)
+	at org.olivier.framePUMLCleaner.<init>(framePUMLCleaner.java:65)
+	at org.olivier.PUMLCleaner$1.run(PUMLCleaner.java:44)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at org.GNOME.Accessibility.AtkWrapper$4.dispatchEvent(AtkWrapper.java:563)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+
+janv. 13, 2015 7:45:24 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 7:45:24 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 9:08:24 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 9:08:24 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:25:21 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:25:21 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:40:05 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:40:05 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:49:31 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:49:31 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:57:08 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:57:08 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:58:46 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:58:46 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 10:59:50 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 10:59:50 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 11:05:03 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 11:05:03 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 11:18:46 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 11:18:46 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 13, 2015 11:53:45 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 13, 2015 11:53:46 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 12:10:21 AM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 12:10:21 AM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 10:34:58 AM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 10:34:58 AM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 11:48:38 AM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 11:48:38 AM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 12:05:37 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 12:05:37 PM org.olivier.framePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 12:26:48 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 12:26:48 PM org.olivier.FramePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 2:30:58 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 2:30:58 PM org.olivier.FramePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 2:38:21 PM org.olivier.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 2:38:21 PM org.olivier.FramePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:16:03 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:16:03 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:18:49 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:18:49 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:27:26 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:27:26 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:27:29 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:27:29 PM org.olivier.ihm.FramePUMLCleaner formWindowClosing
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:28:10 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:28:10 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 14, 2015 3:28:31 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 14, 2015 3:28:31 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 15, 2015 3:50:32 PM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 15, 2015 3:50:32 PM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 16, 2015 10:20:15 AM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 16, 2015 10:20:15 AM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====
+janv. 16, 2015 10:20:45 AM org.olivier.component.MyLogger initLogger
+INFOS: =====     START   =====
+janv. 16, 2015 10:20:45 AM org.olivier.ihm.FramePUMLCleanerControler closeWindows
+INFOS: =====     STOP    =====

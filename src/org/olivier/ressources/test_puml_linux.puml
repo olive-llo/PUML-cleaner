@@ -1,0 +1,131 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+class java.awt.event.MouseAdapter
+class java.awt.event.MouseEvent
+class java.io.BufferedReader
+class java.io.BufferedWriter
+class java.io.File
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.FileOutputStream
+class java.io.FileReader
+class java.io.FileWriter
+class java.io.IOException
+class java.io.InputStream
+class java.io.OutputStream
+class java.util.Collections
+class java.util.NoSuchElementException
+class java.util.Objects
+class java.util.Properties
+class java.util.Stack
+class java.util.logging.FileHandler
+class java.util.logging.Level
+class java.util.logging.Logger
+class java.util.logging.SimpleFormatter
+class javax.swing.JFileChooser
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.JTextArea
+class javax.swing.JTree
+class javax.swing.event.ChangeListener
+class javax.swing.event.TreeSelectionEvent
+class javax.swing.filechooser.FileFilter
+class javax.swing.plaf.ActionMapUIResource
+class javax.swing.tree.DefaultMutableTreeNode
+class javax.swing.tree.DefaultTreeModel
+class javax.swing.tree.DefaultTreeSelectionModel
+class javax.swing.tree.TreeModel
+class javax.swing.tree.TreeNode
+class javax.swing.tree.TreePath
+class javax.swing.tree.TreeSelectionModel
+class org.apache.commons.io.FilenameUtils
+class org.olivier.CheckTreeDemo
+class org.olivier.MyLogger
+class org.olivier.MyProperties
+class org.olivier.NodeInfo
+class org.olivier.PUMLCleaner
+class org.olivier.framePUMLCleaner
+class org.olivier.jtreecheckbox.ChildrenEnumeration
+class org.olivier.jtreecheckbox.PreorderEnumeration
+class org.olivier.jtreecheckbox.check.CheckTreeCellRenderer
+class org.olivier.jtreecheckbox.check.CheckTreeManager
+class org.olivier.jtreecheckbox.check.CheckTreeSelectionModel
+class org.olivier.jtreecheckbox.check.JCheckBox
+class org.olivier.jtreecheckbox.check.JPanel
+class org.olivier.jtreecheckbox.check.TristateCheckBox
+interface java.util.Enumeration
+interface javax.swing.event.TreeSelectionListener
+interface javax.swing.tree.TreeCellRenderer
+interface org.olivier.jtreecheckbox.check.TreePathSelectable
+org.olivier.CheckTreeDemo ..> javax.swing.tree.TreePath
+org.olivier.CheckTreeDemo ..> org.olivier.jtreecheckbox.check.CheckTreeManager
+org.olivier.CheckTreeDemo ..> org.olivier.jtreecheckbox.check.TreePathSelectable
+org.olivier.MyLogger ..> java.io.File
+org.olivier.MyLogger ..> java.io.IOException
+org.olivier.MyLogger ..> java.util.logging.FileHandler
+org.olivier.MyLogger ..> java.util.logging.Level
+org.olivier.MyLogger ..> java.util.logging.Logger
+org.olivier.MyLogger ..> java.util.logging.SimpleFormatter
+org.olivier.MyProperties ..> java.io.FileInputStream
+org.olivier.MyProperties ..> java.io.FileOutputStream
+org.olivier.MyProperties ..> java.io.IOException
+org.olivier.MyProperties ..> java.io.InputStream
+org.olivier.MyProperties ..> java.io.OutputStream
+org.olivier.MyProperties ..> java.util.Properties
+org.olivier.MyProperties ..> java.util.logging.Level
+org.olivier.MyProperties ..> javax.swing.JOptionPane
+org.olivier.MyProperties ..> org.olivier.MyLogger
+org.olivier.framePUMLCleaner ..> java.lang.Override
+org.olivier.framePUMLCleaner ..> java.lang.SuppressWarnings
+org.olivier.framePUMLCleaner ..> java.io.BufferedReader
+org.olivier.framePUMLCleaner ..> java.io.BufferedWriter
+org.olivier.framePUMLCleaner ..> java.io.File
+org.olivier.framePUMLCleaner ..> java.io.FileNotFoundException
+org.olivier.framePUMLCleaner ..> java.io.FileReader
+org.olivier.framePUMLCleaner ..> java.io.FileWriter
+org.olivier.framePUMLCleaner ..> java.io.IOException
+org.olivier.framePUMLCleaner ..> java.util.Properties
+org.olivier.framePUMLCleaner ..> java.util.logging.Level
+org.olivier.framePUMLCleaner ..> javax.swing.JFileChooser
+org.olivier.framePUMLCleaner --|> javax.swing.JFrame
+org.olivier.framePUMLCleaner ..> javax.swing.JOptionPane
+org.olivier.framePUMLCleaner ..> javax.swing.JTextArea
+org.olivier.framePUMLCleaner ..> javax.swing.JTree
+org.olivier.framePUMLCleaner ..> javax.swing.filechooser.FileFilter
+org.olivier.framePUMLCleaner ..> javax.swing.tree.DefaultMutableTreeNode
+org.olivier.framePUMLCleaner ..> javax.swing.tree.DefaultTreeModel
+org.olivier.framePUMLCleaner ..> javax.swing.tree.TreeNode
+org.olivier.framePUMLCleaner ..> javax.swing.tree.TreePath
+org.olivier.framePUMLCleaner ..> org.apache.commons.io.FilenameUtils
+org.olivier.framePUMLCleaner ..> org.olivier.MyLogger
+org.olivier.framePUMLCleaner ..> org.olivier.jtreecheckbox.check.CheckTreeManager
+org.olivier.jtreecheckbox.ChildrenEnumeration ..> java.util.NoSuchElementException
+org.olivier.jtreecheckbox.ChildrenEnumeration ..> javax.swing.tree.TreeModel
+org.olivier.jtreecheckbox.ChildrenEnumeration ..> javax.swing.tree.TreePath
+org.olivier.jtreecheckbox.ChildrenEnumeration --|> java.util.Enumeration
+org.olivier.jtreecheckbox.PreorderEnumeration ..> java.util.Collections
+org.olivier.jtreecheckbox.PreorderEnumeration ..> java.util.Stack
+org.olivier.jtreecheckbox.PreorderEnumeration ..> javax.swing.tree.TreeModel
+org.olivier.jtreecheckbox.PreorderEnumeration ..> javax.swing.tree.TreePath
+org.olivier.jtreecheckbox.PreorderEnumeration --|> java.util.Enumeration
+org.olivier.jtreecheckbox.check.CheckTreeCellRenderer ..> javax.swing.tree.TreePath
+org.olivier.jtreecheckbox.check.CheckTreeCellRenderer --|> org.olivier.jtreecheckbox.check.JPanel
+org.olivier.jtreecheckbox.check.CheckTreeCellRenderer --|> javax.swing.tree.TreeCellRenderer
+org.olivier.jtreecheckbox.check.CheckTreeManager --|> java.awt.event.MouseAdapter
+org.olivier.jtreecheckbox.check.CheckTreeManager ..> java.awt.event.MouseEvent
+org.olivier.jtreecheckbox.check.CheckTreeManager ..> javax.swing.event.TreeSelectionEvent
+org.olivier.jtreecheckbox.check.CheckTreeManager ..> javax.swing.tree.TreePath
+org.olivier.jtreecheckbox.check.CheckTreeManager --|> javax.swing.event.TreeSelectionListener
+org.olivier.jtreecheckbox.check.CheckTreeSelectionModel --|> javax.swing.tree.DefaultTreeSelectionModel
+org.olivier.jtreecheckbox.check.CheckTreeSelectionModel ..> javax.swing.tree.TreeModel
+org.olivier.jtreecheckbox.check.CheckTreeSelectionModel ..> javax.swing.tree.TreePath
+org.olivier.jtreecheckbox.check.CheckTreeSelectionModel ..> javax.swing.tree.TreeSelectionModel
+org.olivier.jtreecheckbox.check.CheckTreeSelectionModel ..> org.olivier.jtreecheckbox.PreorderEnumeration
+org.olivier.jtreecheckbox.check.TristateCheckBox ..> java.lang.Override
+org.olivier.jtreecheckbox.check.TristateCheckBox ..> java.util.Objects
+org.olivier.jtreecheckbox.check.TristateCheckBox ..> javax.swing.event.ChangeListener
+org.olivier.jtreecheckbox.check.TristateCheckBox ..> javax.swing.plaf.ActionMapUIResource
+org.olivier.jtreecheckbox.check.TristateCheckBox --|> org.olivier.jtreecheckbox.check.JCheckBox
+org.olivier.jtreecheckbox.check.TreePathSelectable ..> javax.swing.tree.TreePath
+@enduml

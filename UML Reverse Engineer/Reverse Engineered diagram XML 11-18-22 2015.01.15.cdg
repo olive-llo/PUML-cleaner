@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML Class Diagram">
+  <ClassDiagramComponents>
+    <Class xPosition="550.0" yPosition="1290.0" package="org.olivier" name="CheckTreeDemo" visibility="public">
+      <Constructors/>
+      <Fields/>
+      <Methods>
+        <Method name="createCheckTree" visibility="private" returnType="JTree" isStatic="true">
+          <Argument type="boolean" name="dig"/>
+          <Argument type="TreePathSelectable" name="selectable"/>
+        </Method>
+        <Method name="createScroll" visibility="private" returnType="JScrollPane" isStatic="true">
+          <Argument type="Component" name="comp"/>
+        </Method>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="800.0" yPosition="1290.0" package="org.olivier.component.jtreecheckbox.check" name="CheckTreeCellRenderer" visibility="public">
+      <Constructors>
+        <Constructor name="CheckTreeCellRenderer" visibility="public">
+          <argument type="TreeCellRenderer" name="delegate"/>
+          <argument type="CheckTreeSelectionModel" name="selectionModel"/>
+          <argument type="TreePathSelectable" name="selectable"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="selectionModel" visibility="private" type="CheckTreeSelectionModel"/>
+        <Field name="selectable" visibility="private" type="TreePathSelectable"/>
+        <Field name="delegate" visibility="private" type="TreeCellRenderer"/>
+        <Field name="checkBox" visibility="private" type="TristateCheckBox"/>
+      </Fields>
+      <Methods>
+        <Method name="getTreeCellRendererComponent" visibility="public" returnType="Component">
+          <Argument type="JTree" name="tree"/>
+          <Argument type="Object" name="value"/>
+          <Argument type="boolean" name="selected"/>
+          <Argument type="boolean" name="expanded"/>
+          <Argument type="boolean" name="leaf"/>
+          <Argument type="int" name="row"/>
+          <Argument type="boolean" name="hasFocus"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="50.0" yPosition="1690.0" package="org.olivier.component.jtreecheckbox.check" name="CheckTreeManager" visibility="public">
+      <Constructors>
+        <Constructor name="CheckTreeManager" visibility="public">
+          <argument type="JTree" name="tree"/>
+          <argument type="boolean" name="dig"/>
+          <argument type="TreePathSelectable" name="selectable"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="selectionModel" visibility="private" type="CheckTreeSelectionModel"/>
+        <Field name="selectable" visibility="private" type="TreePathSelectable"/>
+        <Field name="tree" visibility="protected" type="JTree"/>
+        <Field name="hotspot" visibility="package" type="int"/>
+      </Fields>
+      <Methods>
+        <Method name="getSelectable" visibility="public" returnType="TreePathSelectable"/>
+        <Method name="mouseClicked" visibility="public" returnType="void">
+          <Argument type="MouseEvent" name="me"/>
+        </Method>
+        <Method name="getSelectionModel" visibility="public" returnType="CheckTreeSelectionModel"/>
+        <Method name="valueChanged" visibility="public" returnType="void">
+          <Argument type="TreeSelectionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="300.0" yPosition="1690.0" package="org.olivier.component.jtreecheckbox.check" name="CheckTreeSelectionModel" visibility="public">
+      <Constructors>
+        <Constructor name="CheckTreeSelectionModel" visibility="public">
+          <argument type="TreeModel" name="model"/>
+          <argument type="boolean" name="dig"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="model" visibility="private" type="TreeModel"/>
+        <Field name="dig" visibility="private" type="boolean"/>
+      </Fields>
+      <Methods>
+        <Method name="isDigged" visibility="public" returnType="boolean"/>
+        <Method name="isPartiallySelected" visibility="public" returnType="boolean">
+          <Argument type="TreePath" name="path"/>
+        </Method>
+        <Method name="isPathSelected" visibility="public" returnType="boolean">
+          <Argument type="TreePath" name="path"/>
+          <Argument type="boolean" name="dig"/>
+        </Method>
+        <Method name="isDescendant" visibility="private" returnType="boolean">
+          <Argument type="TreePath" name="path1"/>
+          <Argument type="TreePath" name="path2"/>
+        </Method>
+        <Method name="setSelectionPaths" visibility="public" returnType="void">
+          <Argument type="TreePath[]" name="paths"/>
+        </Method>
+        <Method name="addSelectionPaths" visibility="public" returnType="void">
+          <Argument type="TreePath[]" name="paths"/>
+        </Method>
+        <Method name="areSiblingsSelected" visibility="private" returnType="boolean">
+          <Argument type="TreePath" name="path"/>
+        </Method>
+        <Method name="removeSelectionPaths" visibility="public" returnType="void">
+          <Argument type="TreePath[]" name="paths"/>
+        </Method>
+        <Method name="toggleRemoveSelection" visibility="private" returnType="void">
+          <Argument type="TreePath" name="path"/>
+        </Method>
+        <Method name="getAllSelectedPaths" visibility="public" returnType="Enumeration"/>
+      </Methods>
+    </Class>
+    <Interface xPosition="550.0" yPosition="1690.0" package="org.olivier.component.jtreecheckbox.check" name="TreePathSelectable" visibility="public">
+      <Methods>
+        <Method name="isSelectable" visibility="public" returnType="boolean">
+          <Argument type="TreePath" name="path"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class xPosition="800.0" yPosition="1690.0" package="org.olivier.component.jtreecheckbox.check" name="TristateCheckBox" visibility="public">
+      <Constructors>
+        <Constructor name="TristateCheckBox" visibility="public">
+          <argument type="String" name="text"/>
+          <argument type="Icon" name="icon"/>
+          <argument type="Boolean" name="initial"/>
+        </Constructor>
+        <Constructor name="TristateCheckBox" visibility="public">
+          <argument type="String" name="text"/>
+          <argument type="Boolean" name="initial"/>
+        </Constructor>
+        <Constructor name="TristateCheckBox" visibility="public">
+          <argument type="String" name="text"/>
+        </Constructor>
+        <Constructor name="TristateCheckBox" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="model" visibility="private" type="TristateDecorator" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="addMouseListener" visibility="public" returnType="void">
+          <Argument type="MouseListener" name="l"/>
+        </Method>
+        <Method name="setState" visibility="public" returnType="void">
+          <Argument type="Boolean" name="state"/>
+        </Method>
+        <Method name="getState" visibility="public" returnType="Boolean"/>
+      </Methods>
+    </Class>
+    <Class xPosition="50.0" yPosition="2090.0" package="org.olivier.component.jtreecheckbox" name="ChildrenEnumeration" visibility="public">
+      <Constructors>
+        <Constructor name="ChildrenEnumeration" visibility="public">
+          <argument type="TreePath" name="path"/>
+          <argument type="TreeModel" name="model"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="path" visibility="private" type="TreePath"/>
+        <Field name="model" visibility="private" type="TreeModel"/>
+        <Field name="position" visibility="private" type="int"/>
+        <Field name="childCount" visibility="private" type="int"/>
+      </Fields>
+      <Methods>
+        <Method name="hasMoreElements" visibility="public" returnType="boolean"/>
+        <Method name="nextElement" visibility="public" returnType="Object"/>
+      </Methods>
+    </Class>
+    <Class xPosition="300.0" yPosition="2090.0" package="org.olivier.component.jtreecheckbox" name="PreorderEnumeration" visibility="public">
+      <Constructors>
+        <Constructor name="PreorderEnumeration" visibility="public">
+          <argument type="TreePath" name="path"/>
+          <argument type="TreeModel" name="model"/>
+        </Constructor>
+        <Constructor name="PreorderEnumeration" visibility="public">
+          <argument type="Enumeration" name="enumer"/>
+          <argument type="TreeModel" name="model"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="model" visibility="private" type="TreeModel"/>
+        <Field name="stack" visibility="protected" type="Stack"/>
+      </Fields>
+      <Methods>
+        <Method name="hasMoreElements" visibility="public" returnType="boolean"/>
+        <Method name="nextElement" visibility="public" returnType="Object"/>
+      </Methods>
+    </Class>
+    <Class xPosition="550.0" yPosition="2090.0" package="org.olivier.component" name="MyLogger" visibility="public">
+      <Constructors>
+        <Constructor name="MyLogger" visibility="private"/>
+      </Constructors>
+      <Fields>
+        <Field name="LOGGER" visibility="public" type="Logger" isStatic="true" isFinal="true"/>
+        <Field name="LOGDIR" visibility="private" type="String" isStatic="true" isFinal="true"/>
+        <Field name="LOGNAME" visibility="private" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="initLogger" visibility="private" returnType="Logger" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class xPosition="800.0" yPosition="2090.0" package="org.olivier.component" name="MyProperties" visibility="public">
+      <Constructors>
+        <Constructor name="MyProperties" visibility="private"/>
+      </Constructors>
+      <Fields/>
+      <Methods>
+        <Method name="loadProperties" visibility="public" returnType="Properties" isStatic="true">
+          <Argument type="String" name="nameFile"/>
+        </Method>
+        <Method name="writeProperties" visibility="public" returnType="void" isStatic="true">
+          <Argument type="Properties" name="properties"/>
+          <Argument type="String" name="nameFile"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="50.0" yPosition="2490.0" package="org.olivier.component" name="NodeInfo" visibility="public">
+      <Constructors>
+        <Constructor name="NodeInfo" visibility="public">
+          <argument type="String" name="node"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="node" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="toString" visibility="public" returnType="String"/>
+      </Methods>
+    </Class>
+    <Class xPosition="300.0" yPosition="2490.0" package="org.olivier.ihm" name="FramePUMLCleaner" visibility="public">
+      <Constructors>
+        <Constructor name="FramePUMLCleaner" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="controler" visibility="private" type="FramePUMLCleanerControler" isFinal="true"/>
+        <Field name="jButtonFiltrer" visibility="private" type="javax.swing.JButton"/>
+        <Field name="jButtonLireFichier" visibility="private" type="javax.swing.JButton"/>
+        <Field name="jButtonMotif" visibility="private" type="javax.swing.JButton"/>
+        <Field name="jButtonSelect" visibility="private" type="javax.swing.JButton"/>
+        <Field name="jLabelFichier" visibility="private" type="javax.swing.JLabel"/>
+        <Field name="jPanelAnalyse" visibility="private" type="javax.swing.JPanel"/>
+        <Field name="jPanelAnalyseDroite" visibility="private" type="javax.swing.JPanel"/>
+        <Field name="jPanelAnalyseGauche" visibility="private" type="javax.swing.JPanel"/>
+        <Field name="jPanelBas" visibility="private" type="javax.swing.JPanel"/>
+        <Field name="jPanelHaut" visibility="private" type="javax.swing.JPanel"/>
+        <Field name="jScrollPaneAnalyseDroite" visibility="private" type="javax.swing.JScrollPane"/>
+        <Field name="jScrollPaneJTree" visibility="private" type="javax.swing.JScrollPane"/>
+        <Field name="jSplitPaneAnalyse" visibility="private" type="javax.swing.JSplitPane"/>
+        <Field name="jTextAreaFichier" visibility="private" type="javax.swing.JTextArea"/>
+        <Field name="jTextFieldFichier" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="jTextFieldMotif" visibility="private" type="javax.swing.JTextField"/>
+        <Field name="jTreeFiltre" visibility="private" type="javax.swing.JTree"/>
+      </Fields>
+      <Methods>
+        <Method name="initComponents" visibility="private" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void"/>
+        <Method name="jButtonSelectActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="formWindowClosing" visibility="private" returnType="void">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonLireFichierActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonFiltrerActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonMotifActionPerformed" visibility="private" returnType="void">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="550.0" yPosition="2490.0" package="org.olivier.ihm" name="FramePUMLCleanerControler" visibility="public">
+      <Constructors>
+        <Constructor name="FramePUMLCleanerControler" visibility="public">
+          <argument type="JTree" name="jTreeFiltre"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="fileChooser" visibility="private" type="JFileChooser" isStatic="true" isFinal="true"/>
+        <Field name="pumlFilter" visibility="private" type="FileFilter" isStatic="true" isFinal="true"/>
+        <Field name="fichierProperties" visibility="private" type="String" isFinal="true"/>
+        <Field name="nomFichierPropertie" visibility="private" type="String" isFinal="true"/>
+        <Field name="listeCategories" visibility="private" type="String" isFinal="true"/>
+        <Field name="myProperties" visibility="private" type="Properties" isFinal="true"/>
+        <Field name="lines" visibility="private" type="String[]"/>
+        <Field name="categories" visibility="private" type="String[]" isFinal="true"/>
+        <Field name="checkTreeManager" visibility="private" type="CheckTreeManager" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="selectInputFile" visibility="public" returnType="void">
+          <Argument type="JTextField" name="jTextFieldFichier"/>
+        </Method>
+        <Method name="getNomFichier" visibility="public" returnType="String"/>
+        <Method name="getCategories" visibility="private" returnType="String"/>
+        <Method name="analyseInputFile" visibility="public" returnType="void">
+          <Argument type="String" name="filename"/>
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+          <Argument type="JTree" name="jTreeFiltre"/>
+        </Method>
+        <Method name="filterInputFile" visibility="public" returnType="void">
+          <Argument type="String" name="filename"/>
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+          <Argument type="JTree" name="jTreeFiltre"/>
+        </Method>
+        <Method name="analyserFichier" visibility="private" returnType="void">
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+          <Argument type="JTree" name="jTreeFiltre"/>
+        </Method>
+        <Method name="filtrerFichier" visibility="private" returnType="void">
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+          <Argument type="JTree" name="jTreeFiltre"/>
+        </Method>
+        <Method name="isLinePrintable" visibility="private" returnType="boolean">
+          <Argument type="String" name="line"/>
+          <Argument type="DefaultMutableTreeNode" name="nodeToDelete"/>
+        </Method>
+        <Method name="getNodeToDelete" visibility="private" returnType="DefaultMutableTreeNode">
+          <Argument type="DefaultMutableTreeNode" name="allTreeNode"/>
+          <Argument type="TreePath[]" name="selectedPath"/>
+        </Method>
+        <Method name="isNoeudSelected" visibility="private" returnType="boolean">
+          <Argument type="DefaultMutableTreeNode" name="noeudATester"/>
+          <Argument type="TreePath[]" name="selectedPath"/>
+        </Method>
+        <Method name="initaliserNodes" visibility="public" returnType="DefaultMutableTreeNode"/>
+        <Method name="closeWindows" visibility="package" returnType="void"/>
+        <Method name="saveFile" visibility="private" returnType="void">
+          <Argument type="String" name="filename"/>
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+        </Method>
+        <Method name="getNewName" visibility="private" returnType="String">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="readInputFile" visibility="private" returnType="void">
+          <Argument type="String" name="filename"/>
+          <Argument type="JTextArea" name="jTextAreaFichier"/>
+        </Method>
+        <Method name="selectionnerNoeud" visibility="package" returnType="void">
+          <Argument type="String" name="motif"/>
+          <Argument type="JTree" name="jTreeFiltre"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="800.0" yPosition="2490.0" package="org.olivier" name="PUMLCleaner" visibility="public">
+      <Constructors/>
+      <Fields/>
+      <Methods>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="display" visibility="private" returnType="void" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="CheckTreeDemo" target="TreePathSelectable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="selectionModel" source="CheckTreeCellRenderer" target="CheckTreeSelectionModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="checkTreeManager" source="FramePUMLCleanerControler" target="CheckTreeManager" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="selectionModel" source="CheckTreeManager" target="CheckTreeSelectionModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="selectable" source="CheckTreeManager" target="TreePathSelectable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controler" source="FramePUMLCleaner" target="PUMLCleaner" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="selectable" source="CheckTreeCellRenderer" target="TreePathSelectable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CheckTreeManager" target="TreePathSelectable" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CheckTreeManager" target="CheckTreeSelectionModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="checkBox" source="CheckTreeCellRenderer" target="TristateCheckBox" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
